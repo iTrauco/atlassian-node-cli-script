@@ -1,0 +1,20 @@
+{
+  "name": "snippet-script",
+  "version": "0.0.1",
+  "description": "Atlassian suite git snippet-script",
+  "main": "index.js",
+  "bin": {
+    "snippet": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ttps://github.com/iTrauco/node-cli-script.git"
+  },
+  "keywords": [
+    "node",
+    "script",
+    "automation"
+  ],
+  "author": "chris trauco",
+  "license": "ISC"
+}
