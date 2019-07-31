@@ -2,7 +2,8 @@
 
 An automated Atlassian Suite 'snippet' creation CLI script built w/ Node.js.
 
-## Preview
+![Atlassian Suite Developer Documention: Snippets](http://bit.ly/2ZoJFbQ)
+### Preview
 
 This is a CLI application; gif 'snapshots' of the expected command line behavior has been left for personal reference, but may be useful to others and can be viewed on the 'Summary/Overview' pages of each branch, both merged and unmerged. 
 
