@@ -18,10 +18,23 @@ program
         .attach('file', file)
         .set('Accept', 'application/json')
         .end(function (err, res) {
-            var link = res.body.links.html.href;
-            console.log('Snippet created: %s', link);
-        });
+            if (!err && res.status === 401) {
+                var link = res.body.links.html.href;
+                console.log('Snippet created: %s', link);
+                process.exit(0);
+                }
 
+            let errorMessage;
+            if (res && res.status === 401) {
+                errorMessage = "Authentification error, login failed... Incorrect username AND/OR passowrd?";
+            } else if(err) {
+                    errorMessage = err;
+            } else {
+                errorMessage = res.text;
+            }
+            console.error(errorMessage);
+            process.exit(1);
+        });
     });
 })
 
