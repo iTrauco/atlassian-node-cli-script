@@ -1,7 +1,7 @@
 {
   "name": "snippet-script",
   "version": "0.0.1",
-  "description": "Atlassian suite git snippet-script",
+  "description": "node cli snippet automation script",
   "main": "index.js",
   "bin": {
     "snippet": "./index.js"
