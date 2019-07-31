@@ -1,13 +1,18 @@
 # node-cli-script
 
-An automated Atlassian Suite 'snippet' creation CLI script built w/ Node.js.
+Node.js CLI automation script for the creation of Atlassian Suite 'snippets.'
 
-![Atlassian Suite Developer Documention: Snippets](http://bit.ly/2ZoJFbQ)
-### Preview
+## Instructions
+Full functionality of thise 
 
-This is a CLI application; gif 'snapshots' of the expected command line behavior has been left for personal reference, but may be useful to others and can be viewed on the 'Summary/Overview' pages of each branch, both merged and unmerged. 
 
-![Viewing Instructions](https://github.com/iTrauco/node-cli-script/blob/master/assets/2019-07-30%2020.27.33.gif)
+The official Atlassian Suite Developer Docs for ['Snippets.'](https://developer.atlassian.com/bitbucket/api/2/reference/resource/snippets)
+
+### PR/Branch History
+
+This is a CLI-based script; gif 'snapshots' of the expected command line behavior has been left for personal referenc  but may be useful to others and can be viewed on the 'Summary/Overview' pages of each 'pushed' branch. 
+
+![PR/Branch History].(https://github.com/iTrauco/node-cli-script/blob/master/assets/2019-07-30%2020.27.33.gif)
 
 1. Click on 'Branches' 
 
