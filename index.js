@@ -1,4 +1,6 @@
 #!/usr/bin/env node --harmony
+var fs = require('fs');
+const ProgressBar = require('progress');
 const chalk = require('chalk');
 const request = require('superagent');
 const co = require('co');
