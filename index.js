@@ -15,15 +15,27 @@ program
     co(function *() {
         var username = yield prompt('username: ');
         var password = yield prompt.password('password: ');
+        var filesize = fs.statSync(file).size;
+        var fileStream = fs.createReadStream(file);
+        var barOpts = {
+            width: 20,
+            total: filesize,
+            clear: true
+        };
+        var bar = new ProgressBar('uploading [:bar] :percent :etas', barOpts);
+
+        fileStream.on('data', function (chunk) {
+            bar.tick(chunk.length);
+        })
     request
         .post('https://api.bitbucket.org/2.0/snippets/')
         .auth(username, password)
-        .attach('file', file)
+        .attach('file', fileStream)
         .set('Accept', 'application/json')
         .end(function (err, res) {
             if (!err && res.ok) {
                 var link = res.body.links.html.href;
-                console.log('Snippet created: %s', link);
+                // console.log('Snippet created: %s', link);
                 console.log(chalk.bold.green('Snippet created: ') + link);
                 process.exit(0);
                 }
