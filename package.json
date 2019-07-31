@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ttps://github.com/iTrauco/node-cli-script.git"
+    "url": "https://github.com/iTrauco/atlassian-node-cli-script"
   },
   "keywords": [
     "node",
@@ -16,5 +16,13 @@
     "automation"
   ],
   "author": "chris trauco",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.20.0",
+    "progress": "^2.0.3",
+    "superagent": "^5.1.0"
+  }
 }
