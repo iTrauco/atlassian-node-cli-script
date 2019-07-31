@@ -7,7 +7,7 @@ Node.js CLI automation script for the creation of Atlassian Suite 'snippets.'
 **Requirements**
 1. Node 
 2. NPM 
-3. Hihgly limited functionality without *Atlassian Suite BitBucket Account w/ Local SSH Access Configured*
+3. Highly limited functionality without *Atlassian Suite BitBucket Account w/ Local SSH Access Configured*
 *Atlassian Suite Docs:[SSH Key Setup Kb](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html)*
 
 **Steps**
