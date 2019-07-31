@@ -22,13 +22,13 @@ program
             if (!err && res.status === 401) {
                 var link = res.body.links.html.href;
                 console.log('Snippet created: %s', link);
-                console.log(chalk.bold.cyan('Snippet created: ') + link);
+                console.log(chalk.bold.green('Snippet created: ') + link);
                 process.exit(0);
                 }
 
             let errorMessage;
             if (res && res.status === 401) {
-                errorMessage = "Authentification error, login failed... Incorrect username AND/OR passowrd?";
+                errorMessage = "Authentification error, login failed... Incorrect username AND/OR password?";
             } else if(err) {
                     errorMessage = err;
             } else {
@@ -36,6 +36,8 @@ program
             }
             // console.error(errorMessage);
             console.error(chalk.green(errorMessage));
+            console.error(chalk.yellow(errorMessage));
+            console.error(chalk.red(errorMessage));
             process.exit(1);
         });
     });
