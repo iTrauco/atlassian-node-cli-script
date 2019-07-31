@@ -1,16 +1,16 @@
-# node-cli-script
+# atlassian-node-cli-script
 
 Node.js CLI automation script for the creation of Atlassian Suite 'snippets.'
 
 ## Instructions
 
-** Requirements **
+**Requirements**
 1. Node 
 2. NPM 
 3. Hihgly limited functionality without *Atlassian Suite BitBucket Account w/ Local SSH Access Configured*
 *Atlassian Suite Docs:[SSH Key Setup Kb](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html)*
 
-** Steps **
+**Steps**
 
 1. Clone this repo. 
 ```
@@ -37,13 +37,17 @@ snippet --help
 snippet test.txt
 ```
 
+![Demo](https://github.com/iTrauco/atlassian-node-cli-script/blob/staging/assets/script-demo.gif)
+
+**Preview**
+
 The official Atlassian Suite Developer Docs for ['Snippets.'](https://developer.atlassian.com/bitbucket/api/2/reference/resource/snippets)
 
 ### PR/Branch History
 
 This is a CLI-based script; gif 'snapshots' of the expected command line behavior has been left for personal referenc  but may be useful to others and can be viewed on the 'Summary/Overview' pages of each 'pushed' branch. 
 
-![PR/Branch History].(https://github.com/iTrauco/node-cli-script/blob/master/assets/2019-07-30%2020.27.33.gif)
+![PR/Branch History](https://github.com/iTrauco/node-cli-script/blob/master/assets/2019-07-30%2020.27.33.gif)
 
 1. Click on 'Branches' 
 
