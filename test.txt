@@ -1,0 +1,3 @@
+# Test Snippet
+
+# export of txt file to Atlassian Suite as 'snippet' successful
